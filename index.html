@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="TickTacToe.css">
+    <link rel="stylesheet" href="/icons.css">
+    <title>Tick-Tac-Toe</title>
+</head>
+<body>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <div>
+            <input id="P1" type="text" class="player1-name" placeholder="           Player-1">
+            <input id="P2" type="text" class="player2-name" placeholder="           Player-2">
+        </div>
+        <div class="playing-board">
+            <div id="b11" onclick="playerMove('.b11'); playerMove('.b11'); " class="b11"></div>
+            <div id="b12" onclick="playerMove('.b12'); " class="b12"></div>
+            <div id="b13" onclick="playerMove('.b13'); " class="b13"></div>
+            <div id="b21" onclick="playerMove('.b21'); " class="b21"></div>
+            <div id="b22" onclick="playerMove('.b22'); " class="b22"></div>
+            <div id="b23" onclick="playerMove('.b23'); " class="b23"></div>
+            <div id="b31" onclick="playerMove('.b31'); " class="b31"></div>
+            <div id="b32" onclick="playerMove('.b32'); " class="b32"></div>
+            <div id="b33" onclick="playerMove('.b33'); " class="b33"></div>
+        </div>
+        <div class="scoreboard">
+            <button class="reset-button" onclick="reset()"> 
+                Reset
+            </button>
+            <p id="print" class="print"></p>
+        </div>
+            <div class="aditya-info">
+                <h6>By Aditya Jaiswal</h6>
+                <div class="icons">
+                    <a href="https://github.com/adityajaiswal37" class="icon icon--github" target="_blank" >
+                        <img class="github-icon" src="/images/github-line.svg" target="_blank" >
+                    </a>
+                </div>
+            </div>
+        
+    </main>
+
+    <script src="/Tick Tac Toe/TickTacToe.js"></script>
+</body>
+</html>
