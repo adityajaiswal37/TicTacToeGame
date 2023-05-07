@@ -1,0 +1,59 @@
+img{
+    height: 1px;
+}
+.icons{
+    display: flex;
+    column-gap: 25px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid black;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+
+}
+.icon:hover{
+    animation: shake 0.25s;
+}
+.icon--instagram:hover{
+    background-image:radial-gradient(circle at 30% 107%, #fdf497 0%,#fdf497 5%,#fdf499 45%, #d6249f 60%,#285AEB 90%) ;
+    outline-color: #a02d76;
+}
+
+.github-icon{
+    height: 20px;
+    width: 20px;
+}
+.icon--github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+.move-icon{
+    animation: shake 0.25s;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    
+}
