@@ -144,11 +144,7 @@ function playerMove1(param){
         window.alert(`${P2} won`);
         reset()
     }
-  
-    //Tie Conditions
-    else if ((b1 == '0') && (b2 == '0') && (b3 == '0') && 
-        (b4 == '0') && (b5 == '0') && (b6 == '0') && 
-        (b7 == '0') && (b8 == '0') && (b9 == '0')) {
+    else {
             document.getElementById('print')
                 .innerHTML = "Match Tie";
             alert('Match Tie');
